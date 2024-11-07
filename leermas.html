@@ -1,57 +1,122 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/1603/PNG/512/news-newspaper-media-paper-press-article_108607.png">
-    <title>NOTICIAS SIN FRONTERAS - TUMBES</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página web hecha con Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header class="cabecera">
-        <figure class="logo">
-            <img id="inicio" src="img/logo noticias sin fronteras.png" alt="" width="120">
-        </figure>
-        <nav class="menu">
-            <ul class="listas">
-                <li><a href="index.html"> Inicio</a></li>
-                <li><a href="index.html#nosotros"> Nosotros</a></li>
-                <li><a href="index.html#noticias">Noticias</a></li>
-                <li><a href="index.html#contacto">Contactos</a></li>
-            </ul>
-        </nav>  
-    </header>
-<section>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a href="#inicio" class="navbar-brand"> <img src="img/logo noticias sin fronteras.png" alt="logotipo"></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#contenidoMenu"
+					aria-controls="contenidoMenu"
+					aria-expanded="false"
+					aria-label="Mostrar/Ocultar Navegación"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-    <h2 align="center">Noticias</h2>
+				<div class="collapse navbar-collapse" id="contenidoMenu">
+					<!-- Enlaces -->
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a href="index.html#inicio" class="nav-link">Inicio</a>
+						</li>
+
+						<!-- Dropdown -->
+						<li class="nav-item dropdown">
+							<a
+								href="#nosotros"
+								class="nav-link dropdown-toggle"
+								id="submenuProductos"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Nosotros
+							</a>
+
+							<!-- Sub-elementos -->
+							<ul class="dropdown-menu" aria-labelledby="submenuProductos">
+								<li><a href="index.html#nosotros" class="dropdown-item">Nosotros</a></li>
+								<li><a href="index.html#mision" class="dropdown-item">Misión</a></li>
+								<li><a href="index.html#vision" class="dropdown-item">Visión</a></li>
+							</ul>
+						</li>
+						<!-- Dropdown -->
+						<li class="nav-item dropdown">
+							<a
+								href="#noticias"
+								class="nav-link dropdown-toggle"
+								id="submenuProductos"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Noticias
+							</a>
+
+							<!-- Sub-elementos -->
+							<ul class="dropdown-menu" aria-labelledby="submenuProductos">
+								<li><a href="index.html#noticias" class="dropdown-item">Noticias</a></li>
+								<li><a href="ultima_hora.html" class="dropdown-item">Ultima hora</a></li>
+								<li><a href="noticias.html" class="dropdown-item">Noticias de la semana</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="index.html#contacto" class="nav-link">Contacto</a>
+						</li>
+					</ul>
+
+					<!-- Formulario de busqueda -->
+					<form action="" class="d-flex">
+						<input 
+							type="text"
+							class="form-control me-2"
+							aria-label="Buscar"
+							placeholder="Buscar"
+						>
+						<button class="btn btn-primary" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+<main>
+			
+	<h1 align="center">Noticias</h1>
     <p align="justify">"Noticias Sin Fronteras" es un innovador portal de noticias dedicado a la cobertura de la frontera entre Perú y Ecuador. En un contexto donde la información precisa y oportuna es vital, esta plataforma se erige como un puente informativo que conecta a las comunidades de ambos países. Con un enfoque en la veracidad y el análisis crítico, "Noticias Sin Fronteras" ofrece un espacio para que las voces locales sean escuchadas, brindando reportajes en profundidad sobre temas sociales, económicos, culturales y políticos que afectan a la región. 
     La web cuenta con secciones variadas, incluyendo noticias de última hora, análisis de expertos, entrevistas exclusivas y reportajes especiales que destacan la diversidad y riqueza cultural de la frontera. Además, se ofrece un apartado dedicado a la participación ciudadana, donde los lectores pueden enviar sus opiniones y relatos, fomentando un diálogo abierto y constructivo entre los habitantes de ambos lados de la frontera.
             
     "Noticias Sin Fronteras" también se enfoca en la cobertura de eventos transfronterizos, promoviendo la integración y el entendimiento mutuo entre Perú y Ecuador. A través de un diseño amigable y accesible, la plataforma busca llegar a un amplio público, desde jóvenes estudiantes hasta profesionales y familias, asegurando que todos tengan acceso a información relevante y de calidad.
         
     Con un equipo de periodistas comprometidos y apasionados, "Noticias Sin Fronteras" se posiciona como una fuente confiable que no solo informa, sino que también educa y empodera a las comunidades de la frontera. En un mundo donde las noticias pueden ser polarizantes, esta web se dedica a construir puentes y derribar muros, promoviendo una visión más unificada y esperanzadora de la región</p>
+</main>
+<section>
+
     <div align="center">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Mozaico_Tumbes.jpg"  width="400" height="500" alt="Tumbes">
 
 </section>
-    </div>
-        <br>
-        <footer>
-            <div align="center">
-            <p>Todos los derechos resevados &copy;</p>
-    </div>
-
-        <div align="center">
-            <a href="https://www.facebook.com/profile.php?id=100063975104708" target="_blank">facebook</a>
-        </div>
-        </footer>
-        <br> 
-
-
-
-
-
-    <a href="#inicio"><img src="https://cdn.icon-icons.com/icons2/72/PNG/256/up_arrow_14431.png" alt="arriba" width="30" height="30"></a>
+<footer>
+	<div class="container text-center">
+		<p>Todos los derechos reservados &copy;</p>
+	</div>
+</footer>
+	
+		<br>  
+	
+	 </section>
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	 
 </body>
+
 </html>
